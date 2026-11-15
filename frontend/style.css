@@ -46,7 +46,7 @@ header nav a.active {
 main {
     max-width: 1300px;
     margin: 0 auto;
-    padding: 20px 24px 48px;
+    padding: 1.25rem 1.5rem 3rem;
 }
 
 button, select, input[type="text"] {
@@ -122,11 +122,10 @@ select, input[type="text"] {
     margin: 4px 0;
 }
 
-/* робочий простір */
 .work {
     display: grid;
     grid-template-columns: 1fr 340px;
-    gap: 32px;
+    gap: 2rem;
     align-items: start;
 }
 
@@ -198,6 +197,7 @@ select, input[type="text"] {
 
 .pager {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 12px;
     margin: 10px 0;
@@ -364,5 +364,16 @@ td:last-child {
 @media only screen and (max-width: 900px) {
     .work {
         grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header, main { 
+        padding-left: 12px; 
+        padding-right: 12px; 
+    }
+    .empty { 
+        margin: 24px auto; 
+        padding: 20px;
     }
 }
